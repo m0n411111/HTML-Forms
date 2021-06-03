@@ -10,7 +10,54 @@
 body {
     background-color: #ECEEF1;
     line-height: 1.5;
+    height: 100%;
+    width: 100%;
 }
+
+
+/* ---- NAV-BAR ---- */
+
+.nav-bar {
+    display: flex;
+    justify-content: right;
+    padding: 10px 20px;
+}
+
+.nav-bar p {
+    font-size: 12px;
+    color: #7d7e81;
+    line-height: 1.5;
+    padding: 0 10px;
+}
+
+.nav-bar button {
+    font-size: 14px;
+    padding: 5px;
+    padding-right: 20px;
+    border: 1px solid #393A3D;
+}
+
+/* -------- */
+
+
+/* ---- HEADING  ---- */
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading ul li {
+    display: inline-block;
+    padding: 0 5px;
+    padding-bottom: 10px;
+}
+
+/* -------- */
+
+
+/* ---- FORM ---- */
 
 .form-container {
     width: 380px;
@@ -43,15 +90,6 @@ header p {
     color: #7d7e81;
 }
 
-header a {
-    text-decoration: none;
-    color: rgb(2, 134, 211);
-}
-
-header a:hover {
-    text-decoration: underline;
-}
-
 .account-info label {
     font-size: 14px;
     display: block;
@@ -75,13 +113,13 @@ input {
     border-radius: 3px;
     padding: 6px;
     margin-top: 12px;
-    width: 100%; 
+    width: 100%;
 }
 
 .account-action {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 button {
@@ -98,25 +136,18 @@ button {
 }
 
 button i {
-    padding: 0 10px;
+    padding: 0 8px;
 }
 
 #agree {
-    padding: 30px 0;
+    padding-top: 25px;
     font-style: italic;
     font-size: 12px;
     color: #7d7e81;
     line-height: 1.5;
 }
 
-#agree a {
-    text-decoration: none;
-    color: rgb(2, 134, 211);
-}
-
-#agree a:hover {
-    text-decoration: underline;
-}
+/* -- footer inside the form -- */
 
 #form-captcha {
     font-size: 10px;
@@ -125,11 +156,51 @@ button i {
     background-color: #ECEEF1;
 }
 
-#form-captcha a {
+a {
     text-decoration: none;
     color: rgb(2, 134, 211);
 }
 
-#form-captcha a:hover {
+a:hover {
     text-decoration: underline;
 }
+
+/* -------- */
+
+
+/* ---- PAGE FOOTER ---- */
+
+footer {
+    width: 100%;
+    text-align: center;
+}
+
+footer ul li {
+    padding: 0 10px;
+    font-size: 12px;
+    display: inline-block;
+    justify-content: center;
+}
+
+footer a {
+    color: #6d6f74;
+}
+
+#first {
+    font-size: 12px;
+    color: #6d6f74;
+    line-height: 1.5;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+#second {
+    font-size: 12px;
+    color: rgb(2, 134, 211);
+    text-align: left;
+    padding: 20px;
+    background-color: #FFFF;
+    width: 100%;
+}
+
+/* -------- */
