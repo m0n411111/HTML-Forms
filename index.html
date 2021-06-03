@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="reset.css">
@@ -7,46 +8,73 @@
 </head>
 
 <body>
-    <form>
 
-        <caption>
-            <h1>Create an Intuit acount</h1>
-            <p>One account for everything Intuit, including Mint.<br>
-                <a href="https://accounts-help.intuit.com/app/intuit/1995107" target="_blank">Learn more</a>
+    <div class="form-container">
+
+        <div id="form-main">
+
+            <header>
+
+                <h2>Create an Intuit account</h2>
+                <p>One account for everything Intuit, including Mint.
+                    <a href="https://accounts-help.intuit.com/app/intuit/1995107" target="_blank">Learn more</a>
+                </p>
+
+            </header>
+
+            <form>
+
+                <fieldset class="account-info">
+
+                    <label>
+                        Email address
+                        <input type="email" name="email-address" required>
+                    </label>
+
+                    <label>
+                        Phone<span> (recommended)</span>
+                        <input type="tel" name="phone-number">
+                        <p>Standard call, message, or data rates may apply.</p>
+                    </label>
+
+                    <label>
+                        Password
+                        <input type="text" name="password">
+                    </label>
+
+                </fieldset>
+
+                <fieldset class="account-action">
+
+                    <button name="submit">
+                        <i class="material-icons">lock</i>
+                        Create Account
+                    </button>
+
+                    <p id="agree">By selecting Create Account, you agree to our 
+                        <a href="https://mint.intuit.com/terms" target="_blank">Terms</a> 
+                            and have read and acknowledge our 
+                        <a href="https://www.intuit.com/privacy/statement/" target="_blank">Global Privacy Statement</a>.
+                    </p>
+
+                </fieldset>
+
+            </form>
+
+        </div>
+
+        <div id="form-captcha">
+
+            <p>Invisible reCAPTCHA by Google 
+                <a href="https://policies.google.com/privacy?hl=en" target="_blank">Privacy Policy</a>
+                 and 
+                 <a href="https://policies.google.com/terms?hl=en" target="_blank">Terms of Use</a>.
             </p>
-        </caption>
 
-        <fieldset class="account-info">
-            <label>
-                Email address
-                <input type="email" name="email-address" required>
-            </label>
+        </div>
 
-            <label>
-                Phone<span>(recommended)</span>
-                <input type="tel" name="phone-number">
-                <p>Standard call, message, or data rates may apply.</p>
-            </label>
+    </div>
 
-            <label>
-                Password
-                <input type="text" name="password">
-            </label>
-        </fieldset>
-
-        <fieldset class="account-action">
-            <button name="submit">
-                <span class="material-icons lock">lock</span>
-                Create Account
-            </button>
-            <p>By selecting Create Account, you agree to our <a href="https://mint.intuit.com/terms"
-                    target="_blank">Terms</a> and have read and acknowledge our <a
-                    href="https://www.intuit.com/privacy/statement/" target="_blank">Global Privacy Statement</a>.</p>
-            <p><small>Invisible reCAPTCHA by Google <a href="https://policies.google.com/privacy?hl=en"
-                        target="_blank">Privacy Policy</a> and <a href="https://policies.google.com/terms?hl=en"
-                        target="_blank">Terms of Use</a>.</small></p>
-        </fieldset>
-
-    </form>
 </body>
+
 </html>
